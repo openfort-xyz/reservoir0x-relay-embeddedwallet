@@ -9,7 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@openfort/openfort-js": "^0.8.12",
+    "@openfort/openfort-js": "^0.8.13",
     "@reservoir0x/relay-kit-ui": "^2.2.21",
     "@reservoir0x/relay-sdk": "^1.4.7",
     "@tanstack/react-query": "^5.61.0",

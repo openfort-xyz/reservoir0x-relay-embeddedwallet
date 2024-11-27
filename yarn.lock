@@ -918,10 +918,10 @@
   resolved "https://registry.yarnpkg.com/@noble/hashes/-/hashes-1.5.0.tgz#abadc5ca20332db2b1b2aa3e496e9af1213570b0"
   integrity sha512-1j6kQFb7QRru7eKN3ZDvRcP13rugwdxZqCjbiAVZfIJwgj2A65UmT4TgARXGlXgnRkORLTDTrO19ZErt7+QXgA==
 
-"@openfort/openfort-js@^0.8.12":
-  version "0.8.12"
-  resolved "https://registry.yarnpkg.com/@openfort/openfort-js/-/openfort-js-0.8.12.tgz#4fb4ff99ea78bf903532b1e78e344547c51991d4"
-  integrity sha512-rjcRPTQC/S4Pf3s9Jk7Zxpe4Sth16uVSwGfDja2SzMXe9GibNJZD9aAQk5noVo4yjXr/XJzE1l+b3lfGJwnl2Q==
+"@openfort/openfort-js@^0.8.13":
+  version "0.8.13"
+  resolved "https://registry.yarnpkg.com/@openfort/openfort-js/-/openfort-js-0.8.13.tgz#fe0ae3526a10c232b9969b1881b79af194733401"
+  integrity sha512-PPNoc8jxvi+GRcdZr4MuwM4RUWFN8FEhj7+uXp5yohcqogC071VzUKbh6gI34LB/lJI+C5aWf9joWqJThGAy9g==
   dependencies:
     "@ethersproject/abstract-signer" "^5.7.0"
     "@ethersproject/bytes" "^5.7.0"
