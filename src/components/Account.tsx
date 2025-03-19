@@ -1,8 +1,8 @@
 import {useAccount, useDisconnect, useEnsAvatar, useEnsName} from 'wagmi';
-import {openfortInstance} from '../main';
 import {useState} from 'react';
 import { SwapWidget } from '@reservoir0x/relay-kit-ui';
 import { baseSepolia, arbitrumSepolia } from 'viem/chains';
+import openfortInstance from '../utils/openfortConfig';
 
 export function Account() {
   const {address, connector} = useAccount();
@@ -49,6 +49,7 @@ export function Account() {
 
     </div>
       <SwapWidget
+        supportedWalletVMs={['evm']}
         defaultFromToken={{
           chainId: baseSepolia.id,
           decimals: 18,
