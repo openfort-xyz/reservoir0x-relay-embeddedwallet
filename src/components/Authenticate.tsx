@@ -1,18 +1,19 @@
 import React, {useState, useEffect, useRef} from 'react';
-import Openfort, {
+import {
   EmbeddedState,
   ShieldAuthentication,
   ShieldAuthType,
 } from '@openfort/openfort-js';
 import {useNavigate} from 'react-router-dom';
 import { baseSepolia } from 'viem/chains';
+import openfortInstance from '../utils/openfortConfig';
 
 interface AuthFormData {
   email: string;
   password: string;
 }
 
-function Authenticate({openfortInstance}: {openfortInstance: Openfort}) {
+function Authenticate() {
   const [isLogin, setIsLogin] = useState(true);
   const [formData, setFormData] = useState<AuthFormData>({
     email: '',
@@ -20,7 +21,7 @@ function Authenticate({openfortInstance}: {openfortInstance: Openfort}) {
   });
   const [error, setError] = useState<string | null>(null);
   const [isLoading, setIsLoading] = useState(false);
-  const poller = useRef<NodeJS.Timeout | null>(null);
+  const poller = useRef<number | null>(null);
   const navigate = useNavigate();
   const hasConfiguredSigner = useRef<boolean>(false);
 

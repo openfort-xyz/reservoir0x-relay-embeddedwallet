@@ -3,13 +3,13 @@ import {createConfig, http, WagmiProvider} from 'wagmi';
 
 import {Connect} from './components/Connect';
 import {useEffect} from 'react';
-import {openfortInstance} from './main';
 
 import { RelayKitProvider } from '@reservoir0x/relay-kit-ui'
 import { convertViemChainToRelayChain } from '@reservoir0x/relay-sdk'
 import '@reservoir0x/relay-kit-ui/styles.css'
 import { arbitrumSepolia, baseSepolia } from 'viem/chains';
 import { injected } from 'wagmi/connectors';
+import openfortInstance from './utils/openfortConfig';
 
 const queryClient = new QueryClient();
 
